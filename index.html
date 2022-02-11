@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <style>
+        .movement{
+            width: 500px;
+            height: 300px;
+            border: 10px solid rgb(219, 25, 90);
+        }
+
+        .bubble div{
+            margin: 30px;
+            border: 5px solid green;
+        }
+
+    </style>
+    <main>
+        <h1>0</h1>
+        <button class="inc">Increment</button>
+        <button class="dec">Decrement</button>
+        <button class="reset">Reset</button>
+        
+        <section>
+            <!-- <div onmouseover="alert('Hii i am lucky')">DB-Click</div> -->
+            <input type="submit" value="click me">
+        </section>
+
+        <section class="movement">
+            <h1>Mouse Move</h1>
+            <ul>
+                <li class="list1">101</li>
+                <li class="list2">102</li>
+                <li class="list3">103</li>
+                <li class="list4">104</li>
+            </ul>
+        </section>
+
+        <section class="bubble">
+            <div class="bubble" onclick="alert('d1')">d1 
+                <div class="bubble" onclick="alert('d2')">d2 
+                    <div class="bubble" onclick="alert('d3')">d3 
+                        <div class="bubble" onclick="alert('d4')">d4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+    <script>
+        function upToFour(event) {
+            console.log(event.target)
+        }
+    </script>
+</body>
+</html>
